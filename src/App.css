@@ -1,0 +1,56 @@
+.table-layout{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Ensure no horizontal overflow */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.spinner{
+    display: grid;
+    place-self:  center;
+    min-height: 80vh;
+}
+.spin{
+    width: 65px;
+    height: 65px;
+    place-self: center;
+    border: 5px solid  burlywood;
+    border-top-color: green;
+    border-radius: 50%;
+    animation: rotate 2s infinite;
+}
+@keyframes rotate {  
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.coin-info{
+    width: 550px;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.coin-info ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-bottom: 1px solid #5f5d5f;
+    list-style: none;
+}
+.coin-info ul li {
+    font-weight: 300px;
+}
